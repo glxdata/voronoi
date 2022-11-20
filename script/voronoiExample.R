@@ -9,7 +9,7 @@ library(ggvoronoi)
 set.seed(1)
 x <- sample(1:400, size = 100)
 y <- sample(1:400, size = 100)
-dist <- sqrt((x - 200) ^ 2 + (y - 200) ^ 2)
+dist <- sqrt((x - 200) ^ 2 + (y - 200) ^ 2) # calculate distance to center
 
 df <- data.frame(x, y, dist = dist)
 
