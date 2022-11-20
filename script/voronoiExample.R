@@ -25,6 +25,8 @@ ggplot(df, aes(x, y, fill = dist)) +
  geom_voronoi() +
  stat_voronoi(geom = "path") +
  geom_point() +
+ geom_point() + 
+ annotate("point", x = 200, y = 200, shape = 10, size = 5) +
  scale_fill_viridis_c("Distance to center") +
  ggtitle("Voronoi example") +
  xlab("x-axis") +
